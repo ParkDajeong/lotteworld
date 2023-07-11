@@ -9,15 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <!-- Slick -->
-  <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <!-- JS -->
+  <script src="js/slide.js" defer></script>
 </head>
 <body>
   <div class="skip-nav">
@@ -356,9 +356,106 @@
   <main>
     <section class="main-visual" id="mainBanner">
       <h2 class="blind">메인 배너 슬라이드</h2>
-      <div class="banner">
-        <img src="assets/202304240524215580.jpg" alt="">
-      </div>
+      <div class="banner swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_01.jpg" alt="">
+              <strong class="blind">City Vacance & SAMBA (기간: 6월 16일 ~ 8월 27일)</strong>
+              <span class="blind">올여름엔 롯데월드에서 쌈바를 함께 춰바!</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_02.jpg" alt="">
+              <strong class="blind">롯데월드 7월 리뷰 이벤트 - 롯데월드 '리뷰'를 부탁해!</strong>
+              <span class="blind">로티에게 생생한 리뷰 보내면 매월 팡!팡! 터지는 선물. 홈페이지 상단에서 '리뷰' 탭을 찾아보세요!</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_03.jpg" alt="">
+              <strong class="blind">귀담 HAUNTED HOUSE (Ep.1 폐가의 비밀)</strong>
+              <span class="blind">폐가의 비밀을 밝히고 이 곳에서 탈출하세요! (장소: 매직아일랜드 매직캐슬 뒷편)</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_04.jpg" alt="">
+              <strong class="blind">뉴 미디어 아트 셀프 포토 스튜디오 (slick studio)</strong>
+              <span class="blind">미디어 아트를 통해 가장 매력적인 나를 발견하다. (장소: 어드벤처 4층 파라오의 분노 옆)</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_05.jpg" alt="">
+              <strong class="blind">뮤지컬 매직 판타지아 도로시 리턴즈 (2023년 7월 15일(토) ~ 8월 20일(일) / KT&G 상상마당 대치아트홀)</strong>
+              <span class="blind">올 여름방학, 로티 로리가 선보이는 프리미엄 가족 뮤지컬!</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_06.png" alt="">
+              <strong class="blind">롯데월드 어드벤처 X 에브리타운</strong>
+              <span class="blind">이번 여름을 추억할 팜(FARM)타스틱한 콜라보!</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_07.png" alt="">
+              <strong class="blind">MAGIC RIDE</strong>
+              <span class="blind">MAGIC RIDE NFT는 새로운 즐거움이 가득한 신대륙, LOLO:VERSE로 향하는 마법의 티켓입니다.</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_08.jpg" alt="">
+              <strong class="blind">여름방학엔 뭐 Hana? (7월 1일(토) ~ 7월 23일(일). 하나카드로 어드벤처&아쿠아리움 원 큐에!)</strong>
+              <span class="blind">하나카드 회원 누구나! 어드벤처 본인 + 동반 1인 33,000원. 아쿠아리움 본인 21,000원.(어른 종합이용권 기준)</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_09.jpg" alt="">
+              <strong class="blind">카카오페이, 여름 휴가를 부탁해!</strong>
+              <span class="blind">카카오페이로 온라인 예매 시, 종합이용권 최대 39% 할인! (7월 10일(월) ~ 8월 8일(화))</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_10.jpg" alt="">
+              <strong class="blind">도전 롯데월드 공포체험 (7월 1일(토) ~ 7월 31일(월))</strong>
+              <span class="blind">롯데월드 공포체험 어디까지 해봤니..? 초, 중, 고, 대학(원)생은 누구나 도전 가능.</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_11.jpg" alt="">
+              <strong class="blind">롯데월드 개원 34주년 기념! 로티가 쏜다! 쏜다! 쏜다!</strong>
+              <span class="blind">1. 89년 7월 12일생에게 종일권 50% 할인 쏜다!</span>
+              <span class="blind">2. 온라인 선착순 3,400명에게 종일권 45% 쏜다!</span>
+              <span class="blind">3. 7월 생일자에게 종일권 45% 할인 쏜다!</span>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="assets/visual/main_visual_12.jpg" alt="">
+              <strong class="blind">롯데월드 채팅상담 이용 안내</strong>
+              <span class="blind">간단한 질문은 챗봇으로, 궁금한 내용은 채팅상담으로 자세하게!</span>
+            </a>
+          </li>
+        </ul>
+        <div class="banner-pagination-wrap">
+          <div class="banner-pagination swiper-pagination"></div>
+          <button type="button" class="btn-play" data-state="play">
+            <span class="blind">슬라이드 일시정지/재생</span>
+          </button>
+        </div>
+        <div class="banner-btn-wrap">
+          <button type="button" class="banner-btn banner-btn-next"><span class="blind">다음</span></button>
+          <button type="button" class="banner-btn banner-btn-prev"><span class="blind">이전</span></button>
+        </div>
+      </div> <!-- //banner.swiper -->
     </section> <!-- //main-visual -->
     <div class="today-sec" id="todayTime">
       <p class="time-box">
@@ -478,39 +575,39 @@
         <h3 class="sec-tit">다양한 공연 및 퍼레이드 <span>정보를 한눈에!</span></h3>
         <p class="sec-desc">다양한 공연정보를 확인해보세요.</p>
       </div> <!-- //sec-header -->
-      <div class="sec-main">
-        <ul class="show clear">
-          <li class="show-item m-o-shadow">
+      <div class="sec-main swiper">
+        <ul class="show swiper-wrapper clear">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">환타지 마스크 퍼레이드</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">렛츠 드림 나이트 퍼레이드</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">하이스쿨 환타지 드림</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">렛츠 고! 스쿨</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">로티의 모험2 : 사이버 어드벤처</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">캐릭터 환타지아 1</span>
             </a>
           </li>
-          <li class="show-item m-o-shadow">
+          <li class="show-item swiper-slide m-o-shadow">
             <a href="#" class="show-link">
               <span class="show-name">캐릭터 환타지아 2</span>
             </a>
