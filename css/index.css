@@ -55,7 +55,6 @@ header .logo {
   overflow: hidden;
 }
 
-/* ================ 마우스 오버 삼각형 모양,,, ================ */
 .menu-link::after {
   content: "";
   background-color: #550adf;
@@ -81,20 +80,7 @@ header .logo {
   height: 0;
   z-index: 1;
   overflow: hidden;
-  /* transition: height .2s ease-in-out; */
 }
-
-/* .menu-cont::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  opacity: 0.1;
-  z-index: -1;
-} */
 
 .menu-item:hover > .menu-cont {
   border-top: 2px solid #550adf;
@@ -633,9 +619,6 @@ main {
   position: absolute;
   left: 30px;
   bottom: 30px;
-  /* padding-right: 30px; */
-  /* padding을 직접 주는 방법도 있고,
-    max-width나 width를 calc()함수를 사용하여 주는 것도 가능,, */
   max-width: calc(100% - 60px);
   color: #fff;
   font-size: 20px;
@@ -786,7 +769,6 @@ main {
 }
 
 .news-top {
-  /* background-color: aquamarine; */
   margin-bottom: 50px;
 }
 
@@ -899,7 +881,6 @@ footer {
 }
 
 .footer-menu {
-  /* margin: 0 -25px; */
   text-align: center;
   font-size: 0;
 }
